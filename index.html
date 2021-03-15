@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="script.js" async></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="StartScreen_Images/icon.png" rel="icon">
+
+    <title>Timberland Start Screen</title>
+
+</head>
+
+<body onload="move()">
+    <!-- desktop -->
+    <div id="desktop">
+        <div class="background">
+            <div style="padding: 0;">
+                <div class="contentcontainer" style="text-align: center;">
+
+                    <div>
+                        <img style="height: 28%; width: 5%; margin:0; position:fixed; top:0; left:0;"
+                            src="StartScreen_Images/logobanner.png">
+                    </div>
+
+                    <div style="margin-top: 5%;">
+                        <h style="font-size: 18px; font-family: NotoSans;">Ops.. we detected you are on desktop,</h>
+                        <br>
+                        <h style="font-size: 18px; font-family: NotoSans;">please scan QR code to experience on
+                            mobile.</h>
+                    </div>
+
+                    <div>
+                        <img width="220px" src="StartScreen_Images/QRcode.png" alt="" style="padding: 60px 20px 0;">
+                    </div>
+
+                    <div id="footer" style="width: 100%; padding-bottom: 0px;">
+                        <p style="text-align: center; font-size: 1rem; margin-top: 15%; color: #010101; bottom:0; ">
+                            © 2021 TIMBERLAND |
+                            Powered by <a href="https://www.conten.tech/"
+                                style="text-decoration: underline; color:#010101">Conten.T</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------- -->
+
+    <div id="mobile">
+
+        <div class="background">
+
+            <div>
+                <img style="height: 15%; width: 10%; margin:0; position:fixed; top:0; left:0;"
+                    src="StartScreen_Images/logobanner.png">
+            </div>
+
+            <div>
+            <img style="height: 50%; width: 50%; margin-top: 40%;" class="center"
+            src="StartScreen_Images/gs_icon.png">
+               </div>
+
+            <div class="slide-container">
+
+                
+                <img class="slide1" style="height: 30%; width: 50%; position:fixed; top:50%; left:50%;
+                transform:translate(-55%, -50%);" class="center" src="StartScreen_Images/sugarcane_load.png">
+            
+
+            
+                 <p class="slide2" style="margin-top: 10%; position:fixed; top:45%; left:50%;
+                transform:translate(-50%, -50%)">Tips: <br>Tap on the sound icon on<br>the top right to enable<br>sound effects.
+                <br><br>Loading...</p>
+              
+             <img class="slide3" style="height: 30%; width: 50%; position:fixed; top:50%; left:50%;
+                transform:translate(-55%, -50%);" class="center" src="StartScreen_Images/sugarcane_load.png">
+
+                <p class="slide4" style="margin-top: 10%; position:fixed; top:45%; left:50%;
+                transform:translate(-50%, -50%)">Tips: <br>Tap on the sound icon on<br>the top right to enable<br>sound effects.
+                <br><br>Loading...</p>
+
+
+
+                <img class="slide5" style="height: 30%; width: 50%; position:fixed; top:50%; left:50%;
+                transform:translate(-55%, -50%);" class="center" src="StartScreen_Images/sugarcane_load.png">
+                
+                </div>
+       
+
+            <br>
+            <!-- <button style="margin-top: 5%;" href="homepage.html" class="btn fade-in">ENTER</button> -->
+            <a href="homepage.html" style="margin-top: 80%;" class="btn fade-in">ENTER</a>
+
+
+            <div id="footer" style="width: 100%; padding-bottom: 0px;">
+                <p style="font-size: 0.7rem; margin: 2%; color: #010101; bottom:0%;">
+                    © 2021 TIMBERLAND |
+                    Powered by <a href="https://www.conten.tech/"
+                        style="text-decoration: underline; color:#010101">Conten.T</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var d = document.getElementById("desktop");
+        var m = document.getElementById("mobile");
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            console.log("mobile detected");
+            d.style.display = "none";
+            m.style.display = "block";
+        } else {
+            console.log("desktop detected");
+            d.style.display = "block";
+            m.style.display = "none";
+        }
+    </script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+</body>
+
+</html>
